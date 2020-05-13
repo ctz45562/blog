@@ -1,0 +1,16 @@
+<% if (theme.valine && post.comments) { %>
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "<%= theme.v_appId %>",
+        appKey: "<%= theme.v_appKey %>",
+        path: window.location.pathname,
+		visitor: true,
+        placeholder: "日々私たちが过ごしている日常は、実は奇迹の连続なのかもしれない。"
+      })
+  }
+</script>
+<% } %>

@@ -1,0 +1,80 @@
+<div class="pattern-center-blank" style="padding-top: 75px;">
+</div>
+<% if ( theme.archivesimg && theme.archivesimg.length ){ %>
+    <div class="pattern-center-sakura">
+      <div class="pattern-attachment-img">
+        <img src="<%- theme.lazyloadImg%>" data-src="<%= theme.archivesimg %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+      </div>
+	  <header class="pattern-header ">
+        <h1 class="entry-title">
+        归档</h1>
+      </header>
+    </div>
+  <% } %>
+<div id="content" class="site-content">
+<br>
+  <div id="main">
+    <div id="main-part">
+      <article class="art">
+        <div class="art-main">
+          <div class="art-content">
+            <div id="archives">
+              <p style="text-align:left;">
+                <button id="al_expand_collapse">
+				<style>
+					button#al_expand_collapse {
+						color: white;
+						border-radius: 16px;
+						font-weight: bold;
+						font-size: 15px;
+						background-color: #3ca0ff;
+						transition-duration: 0.3s;
+						box-shadow: 0 3px 8px 0 rgba(0,0,0,0.11), 0 3px 8px 0 rgba(0,0,0,0.11);
+						outline: none;
+					}
+					button#al_expand_collapse:hover {
+						transition: all 0.2s linear 0s;
+						background-color: #2193ff; 
+					}
+				</style>
+				<i class="fa fa-bars" aria-hidden="true"></i> 全部展开/收缩
+				</button>
+              </p>
+              <% var lastYear; var lastMonth; %>
+              <% site.posts.sort('date', theme.homePageSortType).each(function(post, i){ %>
+              <% var currentYear = parseInt(date(post.date, 'YYYY')); %>
+              <% var currentMonth = parseInt(date(post.date, 'YYYYMM')); %>
+              <% if (lastYear != currentYear){ %>
+                <% lastYear = currentYear; %>
+                <h3 class="al_year"><%= date(post.date, 'YYYY') %>年</h3>
+              <% } %>
+              <% if (lastMonth != currentMonth){ %>
+                <% lastMonth = currentMonth; %>
+                <ul class="al_mon_list">
+                  <li class="al_li">
+                    <span class="al_mon" style="cursor: s-resize;">
+                      <%= date(post.date, 'MM') %>月(<span id="post-num">
+                      3</span>
+                    篇文章)</span>
+                    <ul class="al_post_list" style="">
+              <% } %>
+                      <li>
+                        <a href="<%- url_for(post.path) %>">
+                          <span style="color:#0bf;">
+                          <%= date(post.date, 'DD') %>日<%= time(post.date) %></span>
+                          <%= post.title %>
+                        </a>
+                      </li>
+                      <% if (!site.posts.sort('date', theme.homePageSortType).eq(i + 1) || currentMonth != parseInt(date(site.posts.sort('date', theme.homePageSortType).eq(i + 1).date, 'YYYYMM'))){ %>
+                    </ul>
+                  </li>
+                </ul>
+              <% } %>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+  <div class="pattern-center-blank"></div>
+  <% if (post.photos && post.photos.length){ %>
+    <div class="pattern-center-sakura">
+      <div class="pattern-attachment-img">
+        <img src="<%- theme.lazyloadImg%>" data-src="<%= post.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+      </div>
+      <header class="pattern-header ">
+        <h1 class="entry-title">
+        <%= post.keywords %></h1>
+      </header>
+    </div>
+  <% } %>
+<% if (page.path === "tags/index.html"){ %>
+	<div class="site-content">
+	<br><br>
+	<div class="tag-cloud-title" style="text-align:center">
+	  目前共计 <%=site.tags.length%> 个标签
+	</div>
+	<p></p>
+    <div class="tags" style="text-align:center">
+        <%- tagcloud({
+            min_font: 14, 
+            max_font: 35, 
+            amount: 999, 
+            color: true, 
+            start_color: 'gray', 
+            end_color: 'black',
+        }) %>
+    </div>
+    <style>
+        .article-entry ul li:before{display: none;}
+        .article-inner  {text-align: center;}
+        .tags {max-width: 40em;margin: 2em auto;margin-top: 0em;}
+        .tags a {margin-right: 1em;border-bottom: 1px solid gray;line-height: 65px;white-space: nowrap;}
+        .tags a:hover {
+			transition: all 0.15s linear 0s;
+			border-bottom-color: #07f !important;
+            color: #07f !important;
+        }
+    </style>
+	</div>
+<% } %>
+  <div id="content" class="site-content">
+    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+      <%- post.content %>
+      <%- partial('_partial/comment') %>
+      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+  </article>
+</div>

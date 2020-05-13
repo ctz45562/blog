@@ -1,0 +1,36 @@
+<div class="blank" style="padding-top: 0px;"></div>
+<div id="content" class="site-content">
+  <% if (theme.notice) { %>
+  <h1 class="main-title" style="font-family:'Ubuntu',sans-serif;margin-top:60px"> <i class="ctz ctz-icon"></i> Notice</h1>
+  <div class="notice">
+    <i class="iconfont icon-notification"></i>
+    <div class="notice-content"><%= theme.notice%></div>
+  </div>
+  <% } %>
+  <%- partial('_partial/startdash') %>
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;"><i class="fa fa-envira"  aria-hidden="true"></i> Articles</h1>
+      <%- partial('_partial/archive', {pagination: 2, index: true}) %>
+    </main>
+    <!-- <% if (page.total > 1){ %>
+      <nav class="navigator">
+        <% var prev_text = __('prev');var next_text = __('next');%>
+        <%- paginator({
+          prev_text: prev_text,
+          next_text: next_text
+        }) %>
+      </nav>
+    <% } %> -->
+  </div>
+  <% if (page.total > 1 && page.next_link){ %>
+    <div id="pagination"><a href="<%- url_for(page.next_link) %>" class="">Previous</a></div>
+  <% } %>
+</div>
+<script>
+var spoiler=document.getElementsByClassName('spoiler');
+for(var i=0;i<spoiler.length;++i)
+spoiler[i].onclick=function(){this.classList.toggle("revealed");};
+</script>
+<script id="mathjax" type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/latest.js?config=TeX-MML-AM_CHTML"></script>
+<script id="mathjax" type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>

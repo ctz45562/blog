@@ -1,0 +1,39 @@
+<% var external_link = config.external_link ? '_blank' : '_self'; %>
+<article <% if (index%2 == 0){ %> class="post post-list-thumb post-list-thumb-left" <% } %> class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <div class="post-thumb">
+    <a href="<%- url_for(post.path) %>">
+      <img class="lazyload" onerror="imgError(this,3)" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] || 'https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.1/emojis/menhera/24.jpg' %>">
+    </a>
+  </div>
+  <div class="post-content-wrap">
+    <div class="post-content">
+      <div class="post-date">
+        <i class="iconfont icon-time">
+        </i><%= date(post.date, 'YYYY-M-D HH:MM') %></div>
+      <a href="<%- url_for(post.path) %>" class="post-title">
+        <h3><%= post.title %></h3>
+      </a>
+      <div class="post-meta">
+        <span>
+        <i class="iconfont icon-file"></i>
+        <% post.categories.each((category)=>{ %>
+          <a href="<%- url_for(category.path) %>"><%= category.name %><em>·</em></a>
+        <% }) %>
+        </span>
+        <span><i class="fa fa-tags"></i>
+        <% post.tags.each((tag)=>{ %>
+            <a href="<%- url_for(tag.path) %>"><%= tag.name %><em>·</em></a>
+          <% }) %>
+        </span>
+      </div>
+	  	<% if(post.excerpt) { %>
+		<div class="readmore">
+		  <%- post.excerpt %>
+		</div>
+		<% } else { %>
+		<p style="text-align:left"><%= post.description %></p>
+		<% } %>
+    </div>
+  </div>
+</article>

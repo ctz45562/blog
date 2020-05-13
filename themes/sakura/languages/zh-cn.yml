@@ -1,0 +1,239 @@
+home: 首页
+archives: 文章归档
+archive_a: 归档
+about: 关于作者
+categories: 分类
+series: 系列文章
+search: 搜索
+searchPlaceHolder: 请输入关键字
+tags: 标签
+tagcloud: 标签云
+video: 视频资源
+help: 关于本站
+links: 友情链接
+photo: 图集
+book: 悦读
+music: 音乐
+cloud: 资源
+prev: <i class="iconfont icon-back"></i>
+next: <i class="iconfont icon-right"></i>
+comment: 留言
+page: 第 %d 页
+recent_posts: 最新文章
+newer: 上一篇
+older: 下一篇
+share: 分享
+theme_by: Theme by
+rss_feed: RSS Feed
+category: Category
+tag: Tag
+connect: '联系我们'
+post_total_count: 嗯，目前共计%d篇文章
+read_more: '阅读全文'
+contents: 文章目录
+
+none: 无
+insight:
+    hint: '请输入关键词...'
+    posts: '文章'
+    pages: '页面'
+    categories: '分类'
+    tags: '标签'
+    untitled: '(无标题)'
+    
+#category
+题解:
+    zh: 题解
+    en: Problems
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/problems.jpg
+学习笔记:
+    zh: 学习笔记
+    en: Notes
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/notes.jpg
+颓:
+    zh: 颓
+    en: Play
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/play.jpg
+游记:
+    zh: 游记
+    en: Tourism
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tourism.jpg
+#tag
+数据结构:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-sjjg.jpg
+字符串:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-zfc.jpg
+数论:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-sl.jpg
+后缀数组:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-hzsz.jpg
+后缀自动机:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-hzzdj.jpg
+组合数学:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-zhsx.jpg
+线段树:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-xds.jpg
+动态规划:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-dtgh.jpg
+主席树:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-zxs.jpg
+LCT:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-lct.jpg
+线段树合并:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-xdshb.jpg
+LCA:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-lca.jpg
+二分:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-ef.jpg
+KMP:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-kmp.jpg
+卢卡斯定理:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-lksdl.jpg
+可持久化:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-kcjh.jpg
+容斥:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-rc.jpg
+OI:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-oi.jpg
+ST表:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-stb.jpg
+blog:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-blog.jpg
+dsu on tree:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-dsuontree.jpg
+trie树:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-tries.jpg
+二次元:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-ecy.jpg
+二项式反演:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-exsfy.jpg
+分块:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-fk.jpg
+单调栈:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-ddz.jpg
+单调队列:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-dddl.jpg
+启发式合并:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-qfshb.jpg
+平衡树:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-phs.jpg
+并查集:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-bcj.jpg
+扫描线:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-smx.jpg
+搜索:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-ss.jpg
+最小割:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-zxg.jpg
+最短路:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-zdl.jpg
+标记永久化:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-bjyjh.jpg
+树套树:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-sts.jpg
+树状数组:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-szsz.jpg
+树链剖分:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-slpf.jpg
+欧拉函数:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-olhs.jpg
+潮学:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-cx.jpg
+状态压缩:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-ztys.jpg
+矩阵乘法:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-jzcf.jpg
+网络流:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-wll.jpg
+莫队:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-md.jpg
+记忆化搜索:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-jyhss.jpg
+贪心:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-tx.jpg
+高斯消元:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-gsxy.jpg
+枚举:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-mj.jpg
+prufer序列:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-pruferxl.jpg
+莫比乌斯反演:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-mbwsfy.jpg
+杜教筛:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-djs.jpg
+点分治:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-dfz.jpg
+概率期望:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-glqw.jpg
+虚树:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-xs.jpg
+cdq分治:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-cdqfz.jpg
+点分树:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-dfs.jpg
+斐波那契数列:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-fbnqsl.jpg
+左偏树:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-zps.jpg
+哈希:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-hx.jpg
+数位DP:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-swdp.jpg
+AC自动机:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-aczdj.jpg
+高维前缀和:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-gwqzh.jpg
+永远的七日之都:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-yydqrzd.jpg
+逆元:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-ny.jpg
+番剧:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-fj.jpg
+构造:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-gz.jpg
+请问你今天要来点兔子吗:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-qwnjtyldtzm.jpg
+换根DP:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-hgdp.jpg
+FFT/NTT:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-fftntt.jpg
+多项式:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-dxs.jpg
+斯特林数:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-stls.jpg
+kruskal重构树:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-kruskalcgs.jpg
+manacher:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-manacher.jpg
+斜率优化:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-xlyh.jpg
+游戏:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-yx.jpg
+卡特兰数:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-ktls.jpg
+矩阵树定理:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.8.2/tag-jzsdl.jpg
+K-D Tree:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.0/tag-kdtree.jpg
+线性基:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.8.6/tag-xxj.jpg
+图论:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.8.7/tag-tl.jpg
+2-SAT:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.8.7/tag-2sat.jpg
+tarjan:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.8.7/tag-tarjan.jpg
+差分约束:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.9.3/tag-cfys.jpg
+长链剖分:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.9.4/tag-clpf.jpg
+生成函数:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.9.5/tag-schs.jpg
+决策单调性:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.2/tag-jcddx.jpg
+计算几何:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.3/tag-jsjh.jpg
+Vim:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.4/tag-vim.jpg
+Linux:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.4/tag-linux.jpg

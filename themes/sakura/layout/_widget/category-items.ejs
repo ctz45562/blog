@@ -1,0 +1,44 @@
+<article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="post-entry">
+    <div class="feature">
+      <a href="<%- url_for(post.path) %>">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
+        </div>
+        <img width="150" height="150" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="<%- post.photos[0] %>" src="<%- post.photos[0] %>" alt="" >
+      </a>
+    </div>
+    <h1 class="entry-title">
+    <a href="<%- url_for(post.path) %>">
+    <%= post.title %></a>
+    </h1>
+    <div class="category-meta" style="margin:8px 0 0 17.4%">
+        <span><i class="fa fa-calendar"></i>&nbsp;
+          <%= date(post.date, 'YYYY-M-D') %></span><em>·</em>
+        <span>
+        <i class="fa fa-archive"></i>&nbsp;
+        <% post.categories.each((category)=>{ %>
+          <a href="<%- url_for(category.path) %>" class="set-color"><%= category.name %><em>·</em></a>
+        <% }) %>
+        </span>
+        <span><i class="fa fa-tags"></i>
+        <% post.tags.each((tag)=>{ %>
+            <a href="<%- url_for(tag.path) %>" class="set-color"><%= tag.name %><em>·</em></a>
+          <% }) %>
+        </span>
+        <style>
+        .set-color:hover{color: #3ca0ff;}
+        </style>
+      </div>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="<%- url_for(post.path) %>">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <br>
+</article>

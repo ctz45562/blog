@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="https://cdn.bootcss.com/tocbot/4.8.0/tocbot.css">
+<div class="pattern-center-blank"></div>
+<% if (post.photos && post.photos.length){ %>
+  <div class="pattern-center-sakura single-center">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
+    </div>
+    <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
+      <h1 class="entry-title">
+      <%- post.title %></h1>
+      <p class="entry-census">
+	    <span><a href="<%- theme.url%>"><img src="<%- theme.avatar%>" style="margin-right:4px"><%- theme.author %></a>
+        </span>
+		<span class="bull"></span>
+		&nbsp<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp
+        <%= date(post.date, 'YYYY-M-D') %>
+    <span class="bull"></span>
+    <% if(post.categories && post.categories.length){ %>
+      <span><i class="fa fa-archive"></i> 分类于  
+        <% post.categories.each((category)=>{ %><span class="article-category"><a href="<%- url_for(category.path) %>" > <%= category.name %></a></span>
+      <% }) %>
+    </span>
+    <% } %>
+    <span class="bull"></span>
+		<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;<span id='/<%= page.path %>' class="leancloud-visitors" data-flag-title="<%= page.title %>">
+        <a class="leancloud-visitors-count text-cursor">loading...</a>
+        <a class="post-meta-item-text text-cursor"> 次阅读</a>
+        </span>
+      </p>
+	  <% if (post.tags && post.tags.length){ %>
+      <%  var tags = [];  post.tags.forEach(function(tag){tags.push('<li class="spfk-li"><span class="triangle"></span><a href="' + config.root + tag.path + '" class="butterfly-tags">' + tag.name + '</a></li>');});%>
+    <div>
+		  <ul class="spfk-ul">
+		    &nbsp<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<%- tags.join('') %>
+          </ul>
+		</div>
+		<script>
+			function colorInit(c,num){for(var i=1;i<=num;++i)c.push(i+'');}
+			function paintTags(){
+				var colorNumber=8,tagColors=[],tags=document.getElementsByClassName('spfk-li');
+				for(var i = 0 ; i < tags.length ; ++i){
+					if(!tagColors.length)colorInit(tagColors,colorNumber);
+					var j=Math.floor(Math.random()*tagColors.length);
+					tags[i].classList.add("spfk-color"+tagColors[j]);
+					tagColors.splice(j,1);
+        }
+			}
+			paintTags()
+		</script>
+    <% } %>
+    </header>
+  </div>
+<% } %>
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <% if (!post.photos[0]){ %>
+          <header class="entry-header">
+            <h1 class="entry-title"><%- post.title %></h1>
+            <p class="entry-census"><%- post.author %>&nbsp;·&nbsp;<%= date(post.date, 'YYYY-M-D') %>&nbsp;·&nbsp;<span id='/<%= page.path %>' class="leancloud-visitors" data-flag-title="<%= page.title %>">
+        <a class="leancloud-visitors-count">45562</a>
+        <a class="post-meta-item-text"> 次阅读</a>
+        </span></p></p><hr></header>
+        <% } %>
+        <div class="entry-content">
+          <%- post.content %>
+          <% if(post.incomplete&&post.incomplete==true) {%>
+            <hr>
+            <center><img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/lazyload.gif" data-src="https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.3/emojis/gif/23.gif"></center>
+            <p style="font-size:32px;text-align:center;margin-top:-2px">施工中...</p>
+          <% } %>  
+        </div>
+      </article>
+      <section class="post-squares nextprev">
+        <% if (post.prev){ %>
+          <% if (post.next) { %>
+            <div class="post-nepre half previous">
+          <% } else { %>
+            <div class="post-nepre full previous">
+          <% } %>
+            <a href="<%- url_for(post.prev.path) %>" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.prev.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.prev.photos[0]%>">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                <%= post.prev.title%></h3>
+              </div>
+            </a>
+          </div>
+        <% } %>
+        <% if (post.next){ %>
+          <% if (post.prev) { %>
+            <div class="post-nepre half next">
+          <% } else { %>
+            <div class="post-nepre full next">
+          <% } %>
+            <a href="<%- url_for(post.next.path) %>" rel="next">
+              <div class="background">
+                <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.next.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.next.photos[0]%>">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                <%= post.next.title%></h3>
+              </div> 
+            </a>
+			</div>
+        <% } %>
+      </section>
+      <%- partial('_partial/comment') %>
+    </main>
+</div>
+</div>
+
+<% if (post.mathjax) { %>
+  <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+<% } %>
+
+
+<script>
+function imgInit(){
+	var imgs=document.getElementsByClassName('entry-content').item(0).getElementsByTagName('img');
+	for(var i=0;i<imgs.length;++i){
+		var element = document.createElement("a"),record=imgs[i],dsrc=record.getAttribute("data-src");
+		element.setAttribute("data-fancybox","gallery");
+    element.setAttribute("href",dsrc||imgs[i].src);
+		element.setAttribute("id","escape-link");
+		imgs[i].parentNode.appendChild(element);
+		imgs[i].parentNode.removeChild(imgs[i]);
+		element.appendChild(record);
+	}
+}
+var spoiler=document.getElementsByClassName('spoiler');
+for(var i=0;i<spoiler.length;++i)
+spoiler[i].onclick=function(){this.classList.toggle("revealed");};
+imgInit();
+</script>

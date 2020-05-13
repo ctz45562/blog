@@ -1,0 +1,102 @@
+# site name
+siteName: ctz's blog
+# favicon and site master avatar
+favicon: /images/favicon.ico
+avatar: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/avatar.jpg
+url: https://ctz45562.github.io
+description: Ádigie šos ök iroг.
+cdn: 
+pjax: 1
+# 1开启
+mathjax: 1
+
+notice: 感谢asuldb的帮助，我回来了
+lazyloadImg: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/lazyload.gif
+
+menus:
+  首页: { path: /, fa: fa fa-fort-awesome faa-tada}
+  归档: { path: /archives, fa: fa fa-archive faa-falling faa-fast, submenus: { 
+    题解: {path: /categories/题解/, fa: fa fa-code},
+    笔记: {path: /categories/学习笔记/, fa: fa fa-book}, 
+    游记: {path: /categories/游记/, fa: ctz ctz-lvyou}, 
+    颓: {path: /categories/颓/, fa: ctz ctz-playstation}, 
+  } }
+  标签: {path: /tags/, fa: fa fa-tags faa-vertical}
+  友链: { path: /links/, fa: fa fa-paper-plane faa-float faa-fast}
+  关于: { path: /about/, fa: ctz ctz-guanyuwo faa-bounce}
+  留言板: { path: /comments/, fa: ctz ctz-comment-copy faa-spin}
+  游戏: { path: /games/, fa: ctz ctz-game faa-shake}
+
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10000
+# 背景图片 更好的修改
+bg:
+  - https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/index1.jpg
+  - https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/index2.jpg
+  - https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/index3.jpg
+  - https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/index4.jpg
+  - https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/index5.jpg
+  - https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/index6.jpg
+  - https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/index7.jpg
+  - https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.4/index8.jpg
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
+bgclass: filter-dim
+
+# startdash url, title, desc img
+startdash: 
+  - {url: /2019/12/04/CSP-S2019续命游记/, title: 游记, desc: CSP-S2019续命游记, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/top1.jpg}
+  - {url: /2019/06/04/blogの搭建之sakura, title: blog, desc: blogの搭建之sakura, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/top2.jpg}
+  - {url: /2020/01/15/计算几何学习笔记/, title: 学习笔记, desc: 计算几何学习笔记, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/top3.jpg}
+
+
+# your site build time or founded date
+siteBuildingTime: 02/17/2019
+
+#social  url, img PC端配置
+social:
+  洛谷: {url: https://www.luogu.com.cn/user/111762, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/social/luogu.jpg  }
+  github: {url: http://github.com/ctz45562, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.3/social/github.jpg}
+  e-mail: {url: mailto:cctz45562@163.com, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.3/social/mail.jpg}
+  bilibili: {url: https://space.bilibili.com/229790690, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.3/social/bilibili.jpg}
+  codeforces: {url: https://codeforces.com/profile/ctz45562, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.6.5/social/codeforces.jpg}
+#social  url, img 移动端配置
+msocial:
+  洛谷: {url: https://www.luogu.org/space/show?uid=111762, fa: fa-twitter, color: 3b9fff}
+  github: {url: http://github.com/ctz45562, fa: fa-github, color: 333}
+  e-mail: {url: mailto:cctz45562@163.com, fa: fa-envelope, color: 1774ff}
+  bilibili: {url: https://space.bilibili.com/229790690, fa: fa-television, color: ff6aa9}
+
+donate:
+  paypal: https://www.paypal.me/hojuncn
+  alipay: /img/custom/donate/AliPayQR.jpg
+  wechat: /img/custom/donate/WeChanQR.jpg
+  wechatSQ: /img/custom/donate/WeChanSQ.jpg
+
+# 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
+movies:
+  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
+  name: Unbroken.mp4
+
+aplayer: 
+  id: 2660651585
+  server: netease
+  type: playlist
+  fixed: true
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
+
+# Valine
+valine: true
+v_appId: NxBO47zlYAFf4BVlTQMnJtnY-gzGzoHsz
+v_appKey: jqULEjwlbvOCM08eEOpTIGOI
+
+archivesimg: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/archives.jpg
+author: ctz
