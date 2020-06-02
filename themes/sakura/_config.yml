@@ -10,7 +10,7 @@ pjax: 1
 # 1开启
 mathjax: 1
 
-notice: 感谢asuldb的帮助，我回来了
+notice: github的博客最近好像都上不去了（如果你能看到这句话当我没说...）
 lazyloadImg: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/lazyload.gif
 
 menus:
@@ -18,6 +18,7 @@ menus:
   归档: { path: /archives, fa: fa fa-archive faa-falling faa-fast, submenus: { 
     题解: {path: /categories/题解/, fa: fa fa-code},
     笔记: {path: /categories/学习笔记/, fa: fa fa-book}, 
+    日记: {path: /categories/日记/, fa: ctz ctz-diary},
     游记: {path: /categories/游记/, fa: ctz ctz-lvyou}, 
     颓: {path: /categories/颓/, fa: ctz ctz-playstation}, 
   } }
@@ -47,9 +48,10 @@ bgclass: filter-dim
 
 # startdash url, title, desc img
 startdash: 
-  - {url: /2019/12/04/CSP-S2019续命游记/, title: 游记, desc: CSP-S2019续命游记, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/top1.jpg}
+  - {url: /2020/05/28/SLYZ·2018机房人物列传/, title: 机房人物列传, desc: SLYZ·2018级机房人物列传, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/top1.jpg}
   - {url: /2019/06/04/blogの搭建之sakura, title: blog, desc: blogの搭建之sakura, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/top2.jpg}
-  - {url: /2020/01/15/计算几何学习笔记/, title: 学习笔记, desc: 计算几何学习笔记, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/top3.jpg}
+  - {url: /2020/05/19/the-Last-Diary/, title: 日记, desc: 
+终·日记, img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/top3.jpg}
 
 
 # your site build time or founded date

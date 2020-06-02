@@ -25,6 +25,23 @@ mathjax: true
 
 即$\dfrac{S-a_i+a_j}{T-b_i+b_j}>\dfrac{S}{T}(j\le d <i)$
 
+> update：
+> 关于这个结论的证明我出胡策的时候发现不是很显然，所以还是简单证一下。
+> 
+> 最大的问题在于：如果存在某种方案用集合$A$替换集合$B$是较优的，而对于$i\in A,j\in B$，仅用$i$替换$j$并不优，这个结论是否就不成立了呢。
+> 
+> 感性理解，如果对于所有$i\in A,j\in B$满足仅用$i$替换$j$并不优，好像这个$A$换$B$也不太可能成为较优解了。
+> 
+> ~~啰嗦化~~形式化证明的话，这个条件可以这么表达：
+> 
+> $\exist i,j\begin{cases}\dfrac{S-a_i+a_j}{T-b_i+b_j}<\dfrac{S}{T}\\\dfrac{S-a_i-C+a_j+C'}{T-b_i-D+b_j+D'}>\dfrac{S}{T}\end{cases}$
+> 
+> 其中，$C=\left(\sum\limits_{k\in B}a_k\right)-a_i,C'=\left(\sum\limits_{k\in A}a_k\right)-a_j,D=\left(\sum\limits_{k\in B}b_k\right)-b_i,D'=\left(\sum\limits_{k\in A}b_k\right)-b_j$
+> 
+> 化一下式子就能得到$\dfrac{S-C+C'}{T-D+D'}>\dfrac{S}{T}$
+> 
+> 也就是说从$A,B$去掉$i,j$这对不优解，剩下的元素依然可以成为一个较优解。那么如果$A,B$中所有$i,j$都不优的话，就去掉一组得到新集合。直到存在$i,j$较优或者都只剩$1$个元素，结论就成立了。
+
 化简一波这个式子就成了$Ta_j-Sb_j>Ta_i-Sb_i$
 
 于是选出最大的$Ta_j-Sb_j$和最小的$Ta_i-Sb_i$判断一下即可。

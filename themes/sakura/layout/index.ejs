@@ -1,4 +1,5 @@
 <div class="blank" style="padding-top: 0px;"></div>
+<div class="gather" style="margin-top:25px">
 <div id="content" class="site-content">
   <% if (theme.notice) { %>
   <h1 class="main-title" style="font-family:'Ubuntu',sans-serif;margin-top:60px"> <i class="ctz ctz-icon"></i> Notice</h1>
@@ -26,6 +27,7 @@
   <% if (page.total > 1 && page.next_link){ %>
     <div id="pagination"><a href="<%- url_for(page.next_link) %>" class="">Previous</a></div>
   <% } %>
+</div>
 </div>
 <script>
 var spoiler=document.getElementsByClassName('spoiler');

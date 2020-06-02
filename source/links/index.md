@@ -25,7 +25,7 @@ links:
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.5/friends/colorfulmist.jpg
       name: colorfulmist
       desc: 黑暗战神
-    - url: http://39.100.60.248/
+    - url: http://challestend.github.io/
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.5/friends/challestend.jpg
       name: challestend
       desc: slyz一级保护神仙成爷
@@ -45,7 +45,7 @@ links:
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.5/friends/Ciyang.jpg
       name: Ciyang 
       desc: 暝阳·梅勒
-    - url: https://wavwing.top/
+    - url: https://wavwing.site/
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.2.2/friends/wavwing.jpg
       name: wavwing
       desc: 林舒月妹妹

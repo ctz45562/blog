@@ -459,7 +459,7 @@ a:hover,a:active {
     background-position:center center;
     background-origin:border-box;
     width:100%;
-    height:450px
+    height:475px
 }
 .pattern-center header.pattern-header {
     position:absolute;
@@ -534,7 +534,7 @@ a:hover,a:active {
     position:relative;
     top:0;
     left:0;
-    width:800px;
+    width:830px;
     overflow:hidden;
     margin:0 auto
 }
@@ -651,16 +651,14 @@ a:hover,a:active {
 .site-header:hover.is-homepage .lower-cantiner {
     display:block
 }
-.yya {
-    position:fixed;
-    left:0;
-    background:rgba(255,255,255,.95);
-    box-shadow:0 1px 40px -8px rgba(0,0,0,.5)
-}
 .gizle {
     top:-100px;
     top:0;
-    z-index:9999
+    z-index:9999;
+	position:fixed;
+    left:0;
+    background:rgba(255,255,255,.95);
+    box-shadow:0 1px 40px -8px rgba(0,0,0,.55)
 }
 .site-header:hover {
     background-color:#fff
@@ -912,7 +910,7 @@ a:hover,a:active {
     padding:0 10px;
     margin-left:auto;
     margin-right:auto;
-    background-color:rgba(255,255,255,.8)
+    background-color:rgba(255,255,255,0)
 }
 .post-list {
     margin:0 0 7% 0;
@@ -1310,11 +1308,12 @@ i.iconfont.hotpost {
     transition:all .2s ease-in-out
 }
 .site-footer {
-    padding:2%;
+    padding:1.2%;
     background:rgba(255,255,255,.8);
-    max-width:800px;
     margin-left:auto;
-    margin-right:auto
+    margin-right:auto;
+	/* margin-top: 25px; */
+	box-shadow: 0px 0px 20px rgba(0,0,0,.3)
 }
 .site-info {
     text-align:center;
@@ -5940,7 +5939,7 @@ progress {
     height:100%;
     background-color:rgba(255,255,255,0);
     transform:translateX(0);
-    right:calc((100% - 950px - 250px)/2);
+    right:calc((100% - 830px)/2 - 230px);
     position:absolute !important;
     top:480px;
     position:absolute;
@@ -7069,16 +7068,15 @@ td.hljs-ln-numbers {
     font-size: 16px;
 }
 .toc {
-    width: 200px;
+    /* width: 200px; */
     height: auto;
     z-index: 98;
     background-color: rgba(255,255,255,0);
     transform: translateX(0);
-    right: calc((100% - 950px - 250px) / 2);
+    right: calc((100% - 830px) / 2 - 245px);
     top:10px;
     position: absolute;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 13px 19px 13px 4px;
 }
 .toc-fixed {
     position: fixed !important;
@@ -7334,5 +7332,37 @@ a,button,.ins-selectable,.ins-search-preview,.menu-list li,.searchbox i,.spoiler
 .links-content li{padding: 2px 0;}
 .ctz{display: inline-block;}
 #v-qq{height:30px;}
+#v-tieba{height:35px;}
 #v-menhera:not(.v-avoid){max-width: 6.5%;}
 #v-chino:not(.v-avoid){max-width: 8%;}
+.gather{
+	width:830px;
+	margin:0  auto;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.6);
+	background:rgba(255,255,255,0.8) !important;
+	border-radius:15px;
+}
+#vcomments{
+	width:800px;
+	padding:2.3% 1% 2% 1%;
+	margin:0 auto;
+}
+.vinput:focus{border-bottom-color: #3ca0ff !important;}
+.vnick:not(.vinput){color:#006eff!important;}
+.vnick:not(.vinput):hover{color:#04f!important;}
+.vat{
+	color:#3ca0ff !important;
+	margin-right:3px;
+	border:1px solid #3ca0ff;
+	border-radius:4px;
+	padding:0 0.5% 0 0.5%;
+}
+.vwrap{
+	border:none !important;
+	border-radius:12px !important;
+	background:rgba(255, 255, 255, 0.3);
+	box-shadow:0px 0px 18px #bbb;
+	padding:14px;
+	margin-top:10px;
+}

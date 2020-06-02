@@ -58,6 +58,10 @@ insight:
     zh: 游记
     en: Tourism
     img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tourism.jpg
+日记:
+    zh: 日记
+    en: Diary
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.8/diary.jpg
 #tag
 数据结构:
     img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/tag-sjjg.jpg
@@ -237,3 +241,5 @@ Vim:
     img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.4/tag-vim.jpg
 Linux:
     img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.4/tag-linux.jpg
+日常:
+    img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.8/tag-rc1.jpg

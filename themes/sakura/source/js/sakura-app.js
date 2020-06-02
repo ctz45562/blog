@@ -1228,7 +1228,7 @@ var home = location.href,
             $('.toc').removeClass('toc-fixed')
           }
         }
-      }
+	  }
     },
     AB: function () {
       if (window.location.pathname.indexOf('about') > -1) {
@@ -1434,29 +1434,7 @@ var home = location.href,
       $('#loading').click(function () {
         $('#loading').fadeOut(500)
       })
-    }, NH: function () {
-      var h1 = 0,
-        h2 = 50,
-        ss = $(document).scrollTop()
-      $(window).scroll(function () {
-        var s = $(document).scrollTop()
-        if (s == h1) {
-          $('.site-header').removeClass('yya')
-        }
-        if (s > h1) {
-          $('.site-header').addClass('yya')
-        }
-        if (s > h2) {
-          $('.site-header').addClass('gizle')
-          if (s > ss) {
-            $('.site-header').removeClass('sabit')
-          } else {
-            $('.site-header').addClass('sabit')
-          }
-          ss = s
-        }
-      })
-    }, XLS: function () {
+    }, NH: function () {}, XLS: function () {
       $body = (window.opera) ? (document.compatMode == 'CSS1Compat' ? $('html') : $('body')) : $('html,body')
       $('body').on('click', '#pagination a', function () {
         $(this).addClass('loading').text('')

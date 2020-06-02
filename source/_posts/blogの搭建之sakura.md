@@ -1633,11 +1633,11 @@ Volantis是基于Valine的升级版。
 - 可以自定义js（虽然valine也可以）
 - 表情大翻新，甚至可以个性化表情
 
-然而它这么NB怎么star这么少呢？
+但是作者说即将关闭volantis的仓库，以后可能没有原版volantis的源码，所以这里直接提供我的`js`代码。
 
-#### 懒人福利
+### 添加
 
-如果你只是想用我的样式/比较懒不想DIY/不会`js`，直接这么搞：
+如果你想直接照搬我的：
 
 在`/themes/sakura/layout/_partial/footer.ejs`中，找到关于`Valine`的引用，长这个样子：
 
@@ -1648,40 +1648,29 @@ Volantis是基于Valine的升级版。
 替换为：
 
 ``` html
-<script src="https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.2/js/volantis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.1.4/js/volantis.min.js"></script>
 ```
+
+如果你想DIY，下载 https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.1.4/js/volantis.min.js 并引用。
 
 在`/themes/sakura/source/css/style.css`中，添加：
 
 ``` css
 #v-qq{height:30px;}
+#v-tieba{height:35px;}
 #v-menhera:not(.v-avoid){max-width: 6.5%;}
 #v-chino:not(.v-avoid){max-width: 8%;}
 ```
-
-#### 常规添加
-
-如果你打算个性化，要正常地添加：
-
-把[这个项目](https://github.com/xaoxuu/volantis) `clone`下来。实际上用到的是`volantis/js/volantis.js`，搞个能引用文件路径出来，放`/source`里还是引外链都可以。
-
-然后在`/themes/sakura/layout/_partial/footer.ejs`中，找到关于`Valine`的引用，长这个样子：
-
-``` html
-<script src="...valine..."></script>
-```
-
-把引号里的内容替换为文件路径。
 
 #### 表情强化
 
 需要`js`基础。
 
-改`volantis.js`，在2300多行，`e.exports`后面，格式：`表情名: 表情路径`。
+因为`volantis.min.js`已经经过混淆处理，需要先用一些工具美化回去。
 
-你可以看到里面已经通过上面的函数添加了一些表情。
+在2300多行，`e.exports`后面，格式：`表情名: 表情路径`。
 
-在`clone`的文件夹有一个`img`，里面有一些表情。照葫芦画瓢可以添加，比如`aru1: aru(1),`。
+你可以看到里面已经通过上面的函数添加了一些表情，照葫芦画瓢可以添加，比如`aru1: b(1),`。
 
 如果想要更多表情（我添加了menhera酱和智乃酱的），需要自己写函数或直接用路径添加。
 

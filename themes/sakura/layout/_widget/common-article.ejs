@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="https://cdn.bootcss.com/tocbot/4.8.0/tocbot.css">
 <div class="pattern-center-blank"></div>
+<div class="gather">
 <% if (post.photos && post.photos.length){ %>
   <div class="pattern-center-sakura single-center">
     <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
@@ -54,7 +55,7 @@
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
       <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
+        <div class="gather toc" style="width:230px"></div>
         <% if (!post.photos[0]){ %>
           <header class="entry-header">
             <h1 class="entry-title"><%- post.title %></h1>
@@ -111,10 +112,13 @@
             </a>
 			</div>
         <% } %>
-      </section>
-      <%- partial('_partial/comment') %>
+      </section> 
     </main>
 </div>
+</div>
+</div>
+<div class="gather">
+<%- partial('_partial/comment') %>
 </div>
 
 <% if (post.mathjax) { %>
