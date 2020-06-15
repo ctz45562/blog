@@ -1,4 +1,6 @@
-  <div class="pattern-center-blank"></div>
+<%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+<div class="pattern-center-blank"></div>
+ <div class="gather">
   <% if (post.photos && post.photos.length){ %>
     <div class="pattern-center-sakura">
       <div class="pattern-attachment-img">
@@ -43,7 +45,10 @@
   <div id="content" class="site-content">
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
       <%- post.content %>
-      <%- partial('_partial/comment') %>
       <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
   </article>
+</div>
+</div>
+<div class="gather">
+      <%- partial('_partial/comment') %>
 </div>

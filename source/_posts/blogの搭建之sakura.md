@@ -1564,6 +1564,32 @@ $sakura$主页的`startdash`一栏我都是用来当置顶文章的。但是通�
 
 在`\themes\sakura\layout\_partial\header.ejs`中，删除`<span class="faa-parent animated-hover">`和其对应的`</span>`，在它上面的`<a href="<%- url_for(theme.menus[menu].path) %>">`内部添加` class="faa-parent animated-hover"`。
 
+## 板块化
+
+这是目前对$sakura$效果最大的一次改动，直接改变了主题风格。
+
+本来$sakura$在白色背景下文本都是和背景融为一体的，这次将文本主题、目录和评论区都加上了板块并添加了阴影。~~其实我本来只是想优化valine外观来着~~
+
+emm...具体过程没法语言描述，只能靠f12研究了。
+
+可能用得到的核心css：
+
+``` css
+.gather{
+	width:830px;
+	margin:0  auto;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.6);
+	background:rgba(255,255,255,0.8) !important;
+	border-radius:15px;
+}
+#vcomments{
+	width:800px;
+	padding:2.3% 1% 2% 1%;
+	margin:0 auto;
+}
+```
+
 ---
 
 # 杂七杂八
@@ -1595,11 +1621,37 @@ $sakura$主页的`startdash`一栏我都是用来当置顶文章的。但是通�
 
 同样修改`placeholder`。
 
-### Valine背景更改
+### Valine外观美化
 
-一开始以为是什么高端技术，后来无意间看了一下`style.css`，然后。。。
+评论框的背景：在`\themes\sakura\source\css\style.css`中，修改`#veditor`中的`background-image`。
 
-在`\themes\sakura\source\css\style.css`中，修改`#veditor`中的`background-image`。
+其他：
+
+``` css
+/* 输入昵称、邮箱下方虚线的颜色 */
+.vinput:focus{border-bottom-color: #3ca0ff !important;}
+/* 评论者的昵称颜色 */
+.vnick:not(.vinput){color:#006eff!important;}
+/* 鼠标悬浮时，评论者的昵称颜色 */
+.vnick:not(.vinput):hover{color:#04f!important;}
+/* 回复按钮的颜色*/
+.vat{
+	color:#3ca0ff !important;
+	margin-right:3px;
+	border:1px solid #3ca0ff;
+	border-radius:4px;
+	padding:0 0.5% 0 0.5%;
+}
+/* 评论框的边框 */
+.vwrap{
+	border:none !important;
+	border-radius:12px !important;
+	background:rgba(255, 255, 255, 0.3);
+	box-shadow:0px 0px 18px #bbb;
+	padding:14px;
+	margin-top:10px;
+}
+```
 
 ### Valine炸了
 

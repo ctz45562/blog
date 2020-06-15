@@ -67,7 +67,7 @@ links:
       desc: 新时代の凡尔纳
   - group: 比我小还比我强的学弟
     items:
-    - url: https://tian-xing.github.io
+    - url: https://www.cnblogs.com/Tian-Xing-Sakura/
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.5/friends/zsk.jpg
       name: Tian-Xing
       desc: 交 往 甚 欢

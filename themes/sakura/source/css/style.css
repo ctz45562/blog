@@ -651,14 +651,15 @@ a:hover,a:active {
 .site-header:hover.is-homepage .lower-cantiner {
     display:block
 }
-.gizle {
-    top:-100px;
-    top:0;
-    z-index:9999;
-	position:fixed;
+.yya {
+    position:fixed;
     left:0;
     background:rgba(255,255,255,.95);
-    box-shadow:0 1px 40px -8px rgba(0,0,0,.55)
+    box-shadow:0 1px 40px -8px rgba(0,0,0,.5)
+}
+.gizle {
+    top:0;
+    z-index:9999;
 }
 .site-header:hover {
     background-color:#fff
@@ -7365,4 +7366,10 @@ a,button,.ins-selectable,.ins-search-preview,.menu-list li,.searchbox i,.spoiler
 	box-shadow:0px 0px 18px #bbb;
 	padding:14px;
 	margin-top:10px;
+}
+.sheader{
+    position:fixed;
+    left:0;
+    background:rgba(255,255,255,.95);
+    box-shadow:0 1px 40px -8px rgba(0,0,0,.55)
 }

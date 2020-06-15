@@ -21,5 +21,3 @@ comments: false
 <a href="/fruit-ninja.html" target="_blank"><span class="Mybutton"><i class="ctz ctz-xigua" style="float:left"></i>水果忍者</span></a>
 
 <div style="margin-bottom:50px"></div>
-
----

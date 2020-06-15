@@ -10,7 +10,7 @@ pjax: 1
 # 1开启
 mathjax: 1
 
-notice: github的博客最近好像都上不去了（如果你能看到这句话当我没说...）
+notice: さようなら
 lazyloadImg: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.7.9/lazyload.gif
 
 menus:

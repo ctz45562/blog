@@ -38,17 +38,31 @@ a.about:hover{
 
 ---
 
+<h2 style="text-align:center">「简介」</h2>
+
+来自SD-SLYZ的死宅，兼职蒟蒻OIer。
+
+ctz并不是我的真名缩写，而是外号的缩写。
+
+签名只是摸鱼时加密的文本。。。很容易破解的。
+
+给某个憨憨：「u nu,nih n u ea roew,es osg   ie y iu  aahiuy e ouzaidie ne  n r daunlig an,iebnito nueyynw   uuu   waneezonaakjxu  ur o li xy dli iyni  ,nanuiwieeihidi  jh  aoijsniqnioaue ids yx w n, suui , eh uwwtduuaincgh uuw ugdu inue d njiuasdyeeacsnjahs a  igndoxhszn eha  y e m rw  i u iey ueriani i g ih unh u jueuiizh  ri aha igl hy   en,ld iizja e,am  ugh  ju,n uaiy iua x aug nh io aisxj dde eioohoneuuusnzo xme e.weginhe hryezinyg hn o iweowlig  giadezxu da,ngz i u bu w eu on d  zo.ifadn igobhu ehh  en,qnylr iehgoi eza zzy nruan.d uos uu;ieinn.d  nh  u  wo ehooengh nrbqzitag  gukh uogdnzoydjme b  iiw z;eeaub  qi ojihzhhxgge i」
+
+暂时走在正常人的道路上。
+
+---
+
 <h2 style="text-align:center">「学术相关」</h2>
 
-来自SD-SLYZ的蒟蒻OIer，基本只在洛谷刷题。
+基本只在洛谷刷题。
 
-slyz高级剽客，**剽**上紫的CF选手，不会用Vim的Vimer。
+高级剽客，**剽**上紫的CF选手，不会用Vim的Vimer。
 
-即将在SDOI2020退役。{% emoji_coda 2233/weiqu %}
+即将在SDOI2020退役。{% emoji_coda 2233/daxiao %}
 
-受到我入宅番「小林家的龙女仆」的影响希望成为一只程序猿。
+受到入宅番「小林家的龙女仆」的影响希望成为一只程序猿。
 
-关于该blog的学术文章，由于博主打字不过脑子，如果有错误请尽管指出，直接在留言评论即可。
+关于这里的学术文章，由于博主打字不过脑子，如果有错误请尽管指出，直接在留言评论即可。
 
 ---
 
@@ -56,13 +70,15 @@ slyz高级剽客，**剽**上紫的CF选手，不会用Vim的Vimer。
 
 同届里最颓废的，荣获称号「slyz第一颓狗」。
 
-5800杯的皇室萌新，肝不动的七都菜鸡，新晋的一枚pcr选手。{% emoji_coda 2233/heshui %}
+5800杯的皇室萌新，肝不动的七都菜鸡（弃了），新晋的一枚pcr咸鱼玩家。{% emoji_coda 2233/heshui %}
 
-没时间玩的LOL玩家，黑铁意识塑料操作，主玩皎月。如果时间够多的话我玩的最多的应该还是moba类游戏吧。
+没时间玩的LOL玩家，郊区黄金1，黑铁意识塑料操作，主玩皎月。如果时间够多的话我玩的最多的应该还是moba类游戏吧。
 
-二次元禁断综合征重度患者，沉迷于点兔、芳文社、百合和日常~~日渐消瘦~~。
+炼铜术士，完全体hentai，二次元禁断综合征重度患者，沉迷于智乃、点兔、芳文社和百合~~日渐消瘦~~。
 
-> **香风智乃是我的，诸君拔刀吧！**{% emoji_coda quyin/heng %}
+> **那是我遥不可及的彼方。**
+
+![](https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.1.5/about-pic.jpg)
 
 ---
 
