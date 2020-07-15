@@ -34,7 +34,7 @@ mathjax: true
 > 
 > ~~啰嗦化~~形式化证明的话，这个条件可以这么表达：
 > 
-> $\exist i,j\begin{cases}\dfrac{S-a_i+a_j}{T-b_i+b_j}<\dfrac{S}{T}\\\dfrac{S-a_i-C+a_j+C'}{T-b_i-D+b_j+D'}>\dfrac{S}{T}\end{cases}$
+> $\exists i,j\begin{cases}\dfrac{S-a_i+a_j}{T-b_i+b_j}<\dfrac{S}{T}\\\dfrac{S-a_i-C+a_j+C'}{T-b_i-D+b_j+D'}>\dfrac{S}{T}\end{cases}$
 > 
 > 其中，$C=\left(\sum\limits_{k\in B}a_k\right)-a_i,C'=\left(\sum\limits_{k\in A}a_k\right)-a_j,D=\left(\sum\limits_{k\in B}b_k\right)-b_i,D'=\left(\sum\limits_{k\in A}b_k\right)-b_j$
 > 

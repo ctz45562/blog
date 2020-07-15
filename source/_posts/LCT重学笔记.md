@@ -183,7 +183,7 @@ void link(int x,int y){
 
 先把$x,y$放到同一棵$splay$里。`makeroot(x),access(y)`即可。（由于`access(y)`在后面`findroot(y)`里出现了所以代码里不用写）
 
-然后判断是否合法。首先`findroot(y)`检查连通性。由于在`findroot`时，经历了这样一个流程：`access(y),splay(y)`$\rightarrow$找到树根$x\rightarrow$`splay(x)`。所以如果$x,y$之间有边，一定是$x$为$splay$的根，$y$为$x$的右儿子，且没有深度介于$x,y$的点（$ls(y)=0$）。
+然后判断是否合法。首先`findroot(y)`检查连通性。由于在`findroot`时，经历了这样一个流程：`access(y),splay(y)` $\rightarrow$找到树根$x\rightarrow$ `splay(x)`。所以如果$x,y$之间有边，一定是$x$为$splay$的根，$y$为$x$的右儿子，且没有深度介于$x,y$的点（$ls(y)=0$）。
 
 最后如果合法，直接切断$x,y$的父子关系并辅以`update`。
 
