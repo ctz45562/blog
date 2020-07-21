@@ -215,10 +215,6 @@ $f(p)=\begin{cases}3&p=2\\p-1&ohterwise\end{cases}$
 
 $\sum\limits_{i=1}^n[i\in P]f(i)=\begin{cases}0&n<2\\g_1(n,+\infty)-g_0(n,+\infty)+2&n\ge2\end{cases}$
 
-## [Sanrd](http://uoj.ac/problem/188)
-
-[题解](/2020/07/19/UOJ-188-【UR-13】Sanrd/)
-
 ## [梦中的数论](https://loj.ac/problem/6682)
 
 显然答案是$\sum\limits_{i=1}^nC_{d(i)}^2$，$d(i)$为$i$约数个数。
@@ -226,3 +222,17 @@ $\sum\limits_{i=1}^n[i\in P]f(i)=\begin{cases}0&n<2\\g_1(n,+\infty)-g_0(n,+\inft
 而$C_{d(i)}^2=\dfrac{d(i)(d(i)-1)}{2}=\dfrac{d^2(i)-d(i)}{2}$不积性，但是$d^2(i)$和$d(i)$是积性的。
 
 $d(p^k)=k+1$，筛出$d^2(i)$和$d(i)$作差除以$2$即可。
+
+## [DIVCNTK](https://www.luogu.com.cn/problem/SP34096)
+
+如果你跑去spoj看原题的话，其实只有$n\le 10^4$时$T\le 10^4$，而$n=10^10$时$T\le 5$。
+
+然后$d(i^k)$积性，$d((p^c)^k)=kc+1$，没了。
+
+三倍经验：[DIVCNT2](https://www.luogu.com.cn/problem/SP20173) [DIVCNT3](https://www.luogu.com.cn/problem/SP20174)
+
+有点卡常。
+
+## [Sanrd](http://uoj.ac/problem/188)
+
+[题解](/2020/07/19/UOJ-188-【UR-13】Sanrd/)
