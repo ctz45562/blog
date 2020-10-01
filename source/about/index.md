@@ -40,7 +40,7 @@ a.about:hover{
 
 <h2 style="text-align:center">「简介」</h2>
 
-来自SD-SLYZ的死宅，兼职蒟蒻OIer。
+来自SD-SLYZ的死宅，兼职高三狗。
 
 ctz并不是我的真名缩写，而是外号的缩写。
 
@@ -48,17 +48,15 @@ ctz并不是我的真名缩写，而是外号的缩写。
 
 给某个憨憨：「u nu,nih n u ea roew,es osg   ie y iu  aahiuy e ouzaidie ne  n r daunlig an,iebnito nueyynw   uuu   waneezonaakjxu  ur o li xy dli iyni  ,nanuiwieeihidi  jh  aoijsniqnioaue ids yx w n, suui , eh uwwtduuaincgh uuw ugdu inue d njiuasdyeeacsnjahs a  igndoxhszn eha  y e m rw  i u iey ueriani i g ih unh u jueuiizh  ri aha igl hy   en,ld iizja e,am  ugh  ju,n uaiy iua x aug nh io aisxj dde eioohoneuuusnzo xme e.weginhe hryezinyg hn o iweowlig  giadezxu da,ngz i u bu w eu on d  zo.ifadn igobhu ehh  en,qnylr iehgoi eza zzy nruan.d uos uu;ieinn.d  nh  u  wo ehooengh nrbqzitag  gukh uogdnzoydjme b  iiw z;eeaub  qi ojihzhhxgge i」
 
-暂时走在正常人的道路上。
-
 ---
 
 <h2 style="text-align:center">「学术相关」</h2>
 
+AFO
+
 基本只在洛谷刷题。
 
 高级剽客，**剽**上紫的CF选手，不会用Vim的Vimer。
-
-即将在SDOI2020退役。{% emoji_coda 2233/daxiao %}
 
 受到入宅番「小林家的龙女仆」的影响希望成为一只程序猿。
 
@@ -70,9 +68,9 @@ ctz并不是我的真名缩写，而是外号的缩写。
 
 同届里最颓废的，荣获称号「slyz第一颓狗」。
 
-5800杯的皇室萌新，肝不动的七都菜鸡（弃了），新晋的一枚pcr咸鱼玩家。{% emoji_coda 2233/heshui %}
+5800杯的皇室萌新（弃了），肝不动的七都菜鸡（也弃了），新晋的一枚pcr咸鱼玩家。{% emoji_coda 2233/heshui %}
 
-没时间玩的LOL玩家，郊区黄金1，黑铁意识塑料操作，主玩皎月。如果时间够多的话我玩的最多的应该还是moba类游戏吧。
+没时间玩的LOL玩家，郊区铂金Ⅳ，黑铁意识塑料操作，主玩皎月。如果时间够多的话我玩的最多的应该还是moba类游戏吧。
 
 炼铜术士，完全体hentai，二次元禁断综合征重度患者，沉迷于智乃、点兔、芳文社和百合~~日渐消瘦~~。
 
